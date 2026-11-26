@@ -147,8 +147,8 @@ public class Menu extends Activity {
                 List<Address> list = geocoder.getFromLocation(loc.getLatitude(), loc.getLongitude(), 1);
                 if (!list.isEmpty()) {
                     Address address = list.get(0);
-                    //messageTextView2.setText("Mi direcci—n es: \n" + address.getAddressLine(0));
-                    //Toast.makeText(Menu.this, "Mi direcci—n es: \n" + address.getAddressLine(0), Toast.LENGTH_SHORT).show();
+                    //messageTextView2.setText("Mi dirección es: \n" + address.getAddressLine(0));
+                    //Toast.makeText(Menu.this, "Mi dirección es: \n" + address.getAddressLine(0), Toast.LENGTH_SHORT).show();
                     //DirD=address.getAddressLine(0);
                 }
             } catch (IOException e) {
@@ -172,7 +172,7 @@ public class Menu extends Activity {
         public void onLocationChanged(Location loc) {
             loc.getLatitude();
             loc.getLongitude();
-            String Text = "Mi ubicaci—n actual es: " + "\n Lat = "
+            String Text = "Mi ubicación actual es: " + "\n Lat = "
                     + loc.getLatitude() + "\n Long = " + loc.getLongitude();
 
             lati=""+loc.getLatitude();

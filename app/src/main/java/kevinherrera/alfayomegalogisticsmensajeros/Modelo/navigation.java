@@ -179,8 +179,8 @@ public class navigation extends AppCompatActivity
                 List<Address> list = geocoder.getFromLocation(loc.getLatitude(), loc.getLongitude(), 1);
                 if (!list.isEmpty()) {
                     Address address = list.get(0);
-                    //messageTextView2.setText("Mi direcci—n es: \n" + address.getAddressLine(0));
-                    //Toast.makeText(Menu.this, "Mi direcci—n es: \n" + address.getAddressLine(0), Toast.LENGTH_SHORT).show();
+                    //messageTextView2.setText("Mi dirección es: \n" + address.getAddressLine(0));
+                    //Toast.makeText(Menu.this, "Mi dirección es: \n" + address.getAddressLine(0), Toast.LENGTH_SHORT).show();
                     //DirD=address.getAddressLine(0);
                 }
             } catch (IOException e) {
