@@ -5,3 +5,12 @@
 .DS_Store
 /build
 /captures
+
+# Dependencies, build output and local files
+*.apk
+*.aab
+.gradle/
+build/
+.idea/
+*.iml
+local.properties
