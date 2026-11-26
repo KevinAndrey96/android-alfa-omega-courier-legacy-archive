@@ -1,27 +1,42 @@
-# Alfa and Omega Courier Mobile App (Legacy Archive)
+# Alfa y Omega Logistics: app Android de mensajeros (archivo histórico)
 
-[![Unified Monorepo](https://img.shields.io/badge/Unified%20Monorepo-android-logistics-fleet-dispatch-platform-blue.svg)](https://github.com/KevinAndrey96/android-logistics-fleet-dispatch-platform)
-[![Status: Historical Archive](https://img.shields.io/badge/Status-Historical%20Archive-lightgrey.svg)](https://github.com/KevinAndrey96/android-logistics-fleet-dispatch-platform)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/KevinAndrey96/android-logistics-fleet-dispatch-platform/blob/master/LICENSE)
+![Estado: archivo histórico](https://img.shields.io/badge/Estado-archivo%20hist%C3%B3rico-lightgrey) ![Java](https://img.shields.io/badge/Java-orange) ![Android SDK 23](https://img.shields.io/badge/Android%20SDK%2023-3DDC84) ![GPS](https://img.shields.io/badge/GPS-blue)
 
-> [!IMPORTANT]
-> **This repository is preserved as a historical component archive.**
-> Development, maintenance, and full-stack containerization have been unified into the flagship production monorepo:
->
-> 🚀 **[KevinAndrey96/android-logistics-fleet-dispatch-platform](https://github.com/KevinAndrey96/android-logistics-fleet-dispatch-platform)**
->
-> Please refer to the main repository for the complete architecture, Docker Compose orchestration, automated test suites, and active documentation.
+> [!NOTE]
+> Código original de la app Android que usaban los mensajeros de Alfa y Omega Logistics para recibir y cerrar servicios en 2018. El producto continúa en **[android-logistics-fleet-dispatch-platform](https://github.com/KevinAndrey96/android-logistics-fleet-dispatch-platform)**, que reúne todos sus componentes con documentación actualizada.
+> 
+> La raíz y la carpeta `AlfayOmegaLogistics(Mensajeros)/` guardan dos versiones del mismo proyecto; se mantienen ambas tal como se entregaron.
 
----
+## Qué contiene
 
-## 📌 Historical Overview
+- Bandejas de servicios por asignar y por realizar (`PorAsignar`, `PorRealizar`).
+- Ubicación actual del mensajero con el proveedor de localización de Android (`Menu`, `navigation`).
+- Confirmación de entrega con fotografía y firma del destinatario (`FotoFirma`).
+- Historial de servicios, cuenta del mensajero y cambio de contraseña.
 
-This repository preserves the historical native Android application for urban couriers originally developed for the Alfa and Omega Logistics Fleet Dispatch Platform. It featured live GPS route tracking, digital signatures, and camera photo delivery confirmation.
+## Stack original
 
-All components, database schemas, and workflows have been merged and modernized into the primary repository: **[android-logistics-fleet-dispatch-platform](https://github.com/KevinAndrey96/android-logistics-fleet-dispatch-platform)**.
+| Componente | Tecnología |
+| :--- | :--- |
+| Lenguaje | Java |
+| Plataforma | Android SDK 23 (mínimo 14) |
+| Red | Apache HttpClient y HttpMime |
+| Build | Gradle con Android Gradle Plugin 2.3 |
 
----
+## Ejecutarlo localmente
 
-## 📄 License
+Importa el proyecto en Android Studio. Usa Android Gradle Plugin 2.3, `compileSdkVersion 23` y Google Play Services 8.4, por lo que necesita un JDK 8 y un Gradle antiguo para compilar. Las llaves de Google Maps se reemplazaron por `YOUR_GOOGLE_MAPS_API_KEY`.
 
-This historical archive is part of the project licensed under the MIT License. See the main repository for details.
+## Estado del repositorio
+
+- Se conserva sin cambios funcionales como referencia del código original (2018).
+- No recibe actualizaciones de dependencias; el mantenimiento ocurre en [android-logistics-fleet-dispatch-platform](https://github.com/KevinAndrey96/android-logistics-fleet-dispatch-platform).
+- En noviembre de 2026 se depuró el historial completo: se retiraron 40 APK compilados y las carpetas `.idea/`. Todos los commits conservan su fecha original.
+
+## Autoría
+
+Kevin Andrey Herrera Silva ([@KevinAndrey96](https://github.com/KevinAndrey96)).
+
+## Licencia
+
+Código desarrollado para un cliente y publicado como muestra de portafolio. No incluye licencia de código abierto: todos los derechos reservados.
