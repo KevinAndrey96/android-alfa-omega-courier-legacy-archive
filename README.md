@@ -31,7 +31,7 @@ Importa el proyecto en Android Studio. Usa Android Gradle Plugin 2.3, `compileSd
 
 - Se conserva sin cambios funcionales como referencia del código original (2018).
 - No recibe actualizaciones de dependencias; el mantenimiento ocurre en [android-logistics-fleet-dispatch-platform](https://github.com/KevinAndrey96/android-logistics-fleet-dispatch-platform).
-- En noviembre de 2026 se depuró el historial completo: se retiraron 40 APK compilados y las carpetas `.idea/`. Todos los commits conservan su fecha original.
+- En noviembre de 2026 se depuró el historial completo: se retiraron 32 APK compilados y las carpetas `.idea/`. Todos los commits conservan su fecha original.
 
 ## Autoría
 
